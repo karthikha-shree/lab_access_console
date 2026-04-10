@@ -51,6 +51,11 @@ class StudentController:
             labController.grant_boking(self)
         else:
             print("you are not a coordinator")
+    def showmybooking(userid):
+        for i ,v in AppRepo.booking.items():
+            if book.get_user_id(v)==userid:
+                print(f"Student id , Equipment id:{i} |Equipment:{Equipment.get_eq_name(AppRepo.equipment[book.get_eq_id(v)])} | slot:{book.get_slot_id(v)} | Status:{book.get_permit(v)}")
+
 
             
 

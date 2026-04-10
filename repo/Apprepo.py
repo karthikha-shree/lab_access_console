@@ -7,4 +7,6 @@ class AppRepo:
     timeslot={}
     booking={}
     grantaccess=defaultdict(int)
-    userslot=set()
+    userslot={}
+
+    
